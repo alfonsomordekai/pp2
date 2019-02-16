@@ -4,14 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Task2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            FileStream a = new FileStream(@"C:\Users\Admin\Desktop\proga\pp2\week 2\xxx.txt", FileMode.Open, FileAccess.Read);
+            FileStream a = new FileStream(@"C:\Users\Admin\Desktop\proga\pp2\week 2\lab2\xxx.txt", FileMode.Open, FileAccess.Read);
             StreamReader b = new StreamReader(a);
             string l = b.ReadLine();
             a.Close();
@@ -38,7 +37,7 @@ namespace Task2
                 }
                 bl = true;
             }
-            FileStream d = new FileStream(@"C:\Users\Admin\Desktop\proga\pp2\week 2\xxxx.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            FileStream d = new FileStream(@"C:\Users\Admin\Desktop\proga\pp2\week 2\lab2\xxxx.txt", FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter e= new StreamWriter(d);
             e.WriteLine(c);
             e.Close();

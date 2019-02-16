@@ -11,10 +11,11 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            FileStream a = new FileStream(@"C:\Users\Admin\Desktop\proga\pp2\week 2\zzz.txt", FileMode.Open, FileAccess.Read);
+            FileStream a = new FileStream(@"C:\Users\Admin\Desktop\proga\pp2\week 2\lab2\zzz.txt", FileMode.Open, FileAccess.Read);
             StreamReader b = new StreamReader(a);
             string c = b.ReadLine();
             string d = new string(c.ToCharArray().Reverse().ToArray());
+       
             if (d == c) Console.WriteLine("Yes");
             else Console.WriteLine("No");
         }
